@@ -13,7 +13,6 @@ class CsvParser {
             silver_medal = tokens[Constants.CoulmnIndex.SILVER_MEDAL].toInt(),
             bronze_medal = tokens[Constants.CoulmnIndex.BRONZE_MEDAL].toInt(),
             total_medals = tokens[Constants.CoulmnIndex.TOTAL_MEDALS].toInt(),
-            rank_by_total = tokens[Constants.CoulmnIndex.RANK_BY_TOTAL].toInt(),
             noc_code = tokens[Constants.CoulmnIndex.NOC_CODE]
         )
     }

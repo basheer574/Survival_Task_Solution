@@ -7,6 +7,5 @@ data class Achievements (
     val silver_medal:Int?,
     val bronze_medal:Int?,
     val total_medals:Int?,
-    val rank_by_total:Int?,
     val noc_code:String?
 )

@@ -1,26 +1,27 @@
 package com.example.survivaltask.Data
 
-class DataManager {
+object DataManager {
+    private val rankList = mutableListOf<Achievements>()
+    val ranks : List<Achievements>
+    get() = rankList
 
-    fun getRank(){
+    private var rankIndex = 0
 
+    fun addRank(achievements: Achievements){
+        rankList.add(achievements)
     }
-    fun getTeam(){
+    fun getCurrentRank() : Achievements = rankList[rankIndex]
 
+    fun getNextRank() : Achievements {
+        rankIndex++
+        if(rankIndex==rankList.size)
+            rankIndex = 0
+        return rankList[rankIndex]
     }
-    fun getGoldMedal(){
-
-    }
-    fun getSilverMedal(){
-
-    }
-    fun getBronzeMedal(){
-
-    }
-    fun getTotalMedals(){
-
-    }
-    fun getNocCode(){
-
+    fun getPreviousRank() : Achievements {
+        rankIndex--
+        if(rankIndex==-1)
+            rankIndex = rankList.size - 1
+        return rankList[rankIndex]
     }
 }
