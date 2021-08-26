@@ -1,6 +1,8 @@
 package com.example.survivaltask.ui.adapters
 
+import android.graphics.Color
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.survivaltask.Data.Achievements
@@ -23,6 +25,23 @@ class RankAdapter(val list: List<Achievements>) : RecyclerView.Adapter<RankViewH
             teamName.text = currentRank.team
             totalMedals.text = ("Total Medals ${currentRank.total_medals}").toString()
             rank.text = ("Rank # ${currentRank.rank}").toString()
+
+            if(position==0){
+                topThreeMedal.background.setTint(holder.itemView.resources.getColor(R.color.gold_color))
+                topThreeMedal.visibility = View.VISIBLE
+            }
+
+            else if(position==1){
+                topThreeMedal.background.setTint(holder.itemView.resources.getColor(R.color.silver_color))
+                topThreeMedal.visibility = View.VISIBLE
+            }
+
+            else if(position==2){
+                topThreeMedal.background.setTint(holder.itemView.resources.getColor(R.color.bronze_color))
+                topThreeMedal.visibility = View.VISIBLE
+            }
+            else
+                topThreeMedal.visibility = View.GONE
         }
 
     }

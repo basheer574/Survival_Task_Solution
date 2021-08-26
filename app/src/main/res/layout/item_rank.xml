@@ -145,5 +145,16 @@
             app:layout_constraintStart_toStartOf="@+id/bronze_medal"
             app:layout_constraintTop_toBottomOf="@+id/bronze_medal" />
 
+        <ImageView
+            android:id="@+id/top_three_midal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toEndOf="@+id/rank"
+            android:background="@drawable/ic_medal"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

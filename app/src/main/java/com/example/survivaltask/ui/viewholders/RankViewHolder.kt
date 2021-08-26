@@ -13,4 +13,5 @@ class RankViewHolder(viewItem: View) : RecyclerView.ViewHolder(viewItem) {
     val goldMedals: TextView = viewItem.findViewById(R.id.text_total_gold_medal)
     val silverMedals: TextView = viewItem.findViewById(R.id.text_total_silver_medal)
     val bronzeMedals: TextView = viewItem.findViewById(R.id.text_total_bronze_medal)
+    val topThreeMedal: ImageView = viewItem.findViewById(R.id.top_three_midal)
 }

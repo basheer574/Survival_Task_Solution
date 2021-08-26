@@ -10,4 +10,5 @@
     <color name="gold_color">#FFCA28</color>
     <color name="silver_color">#546E7A</color>
     <color name="bronze_color">#FF7043</color>
+    <color name="statebar_color">#F1F1F1</color>
 </resources>
